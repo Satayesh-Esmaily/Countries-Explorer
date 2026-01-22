@@ -17,6 +17,7 @@ function App() {
   const [sort, setSort] = useState("none");
 
  
+
   const applyFilters = (list) => {
   let result = list.filter((country) => {
     const matchSearch =
@@ -103,15 +104,15 @@ function App() {
       <h1>Countries Explorer</h1>
 
       <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
-     <div className="controls">
-      <Controls
-        search={search}
-        setSearch={setSearch}
-        region={region}
-        setRegion={setRegion}
-      />
-     <SortSelect sort={sort} setSort={setSort} />
-     </div>
+<div className="controls">
+  <Controls
+    search={search}
+    setSearch={setSearch}
+    region={region}
+    setRegion={setRegion}
+  />
+  <SortSelect sort={sort} setSort={setSort} />
+</div>
 
       {loading && <SkeletonGrid />}
 
