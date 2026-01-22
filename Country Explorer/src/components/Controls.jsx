@@ -7,6 +7,7 @@ function Controls({ search, setSearch, region, setRegion }) {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
+      
       <select value={region} onChange={(e) => setRegion(e.target.value)}>
         <option value="all">All</option>
         <option value="Africa">Africa</option>
